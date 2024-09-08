@@ -1,8 +1,18 @@
 /* You can add global styles to this file, and also import other style files */
 
 html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+body { margin: 0; font-family: 'Star Jedi', sans-serif !important; }
 
+/* Apply font to specific Angular Material components */
+.mat-toolbar,
+.mat-form-field label,
+.mat-tab-label,
+.mat-button,
+.mat-table,
+.mat-mdc-raised-button,
+.mat-mdc-header-cell {
+    font-family: 'Star Jedi', sans-serif !important;
+}
 .spinner-container {
     display: flex;
     justify-content: center;
