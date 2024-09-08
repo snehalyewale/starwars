@@ -1,0 +1,10 @@
+.star-card {
+    width: 50%;
+    left: 30%;
+}
+
+.star-card-header {
+    background-color: #8693da;
+    color: white;
+    justify-content: center;
+}

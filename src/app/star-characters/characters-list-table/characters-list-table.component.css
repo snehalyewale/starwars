@@ -1,0 +1,9 @@
+.favorite {
+    color: gold;
+    cursor: pointer;
+}
+
+.not-favorite {
+    color: grey;
+    cursor: pointer;
+}

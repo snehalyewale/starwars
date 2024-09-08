@@ -1,1 +1,21 @@
-<p>character-details works!</p>
+<a mat-button [routerLink]="['/']">
+    <mat-icon>arrow_back</mat-icon>
+    Back To Characters List
+</a>
+<mat-card class="example-card star-card" appearance="outlined">
+    <mat-card-header class="star-card-header">
+        <mat-card-title>{{characterDetails?.name}}</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+        <p><strong>Age:</strong> {{ characterDetails?.height }}</p>
+        <p><strong>Weight:</strong> {{ characterDetails?.mass }}</p>
+        <p><strong>Birth Year:</strong> {{ characterDetails?.birth_year }}</p>
+        <p><strong>Gender:</strong> {{ characterDetails?.gender }}</p>
+        <p><strong>Home world:</strong> {{planetName }}</p>
+        <mat-divider></mat-divider>
+        <p><strong>List of Films:</strong></p>
+        @if (characterDetails?.films) {
+        <app-films-list [filmUrls]="characterDetails?.films"></app-films-list>
+        }
+    </mat-card-content>
+</mat-card>
